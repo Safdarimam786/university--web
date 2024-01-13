@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://i.ibb.co/zmWN063/banner.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 200px;
+  }
+  .nav-link{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-link ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+  }
+  .nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  .nav-link ul li:hover::after{
+    width: 100%;
+  
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .text-box h1{
+    font-size: 50px;
+  
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+  
+  }
+  .visit-btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    position:relative;
+    cursor: pointer;
+    padding: 10px;
+  
+  }
+  .visit-btn:hover{
+    background-color: black;
+    transition: 1s;
+  
+  }
+  nav .fas{
+    display: none;
+  }
+  
+  
+  
+  @media(max-width:700px){
+    .text-box h1{
+    font-size: 20px;}
+    .text-box p{
+    margin: 10px 0 40px;
+    font-size: 12px;}
+    .nav-link ul li{
+      display: block;
+  
+  
+    }
+    .row{
+      flex-direction: column;
+    }
+    .nav-link{
+      position: absolute;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      background:#f44336;
+      z-index: 2;
+      transition: 1s;
+    }
+  
+  
+      nav .fas{
+        display: inline-block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+  
+      }
+  
+      .nav-link ul{
+        padding: 20px;
+      }
+      
+  
+         .cta h1{
+          font-size: 24px;
+  
+         }
+    }
+  
+    /*course*/
+  
+  
+  
+  
+    .course{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+      font-size: 30px;
+    }
+  
+    h1{
+      font-size: 36px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+    }
+    .row{
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .cols{
+      flex-basis: 31%;
+      background: #fff3f3;
+      border-radius: 15px;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+    h3{
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+      font-size: 30px;
+    }
+    .cols:hover{
+      box-shadow: 10px 20px 20px #313632,
+                   -10px 10px 10px #313632;
+  
+    }
+  
+  
+    /* campus */
+  
+  
+  
+    .campus{
+      width: 80%;
+      text-align: center;
+      padding-top: 50px;
+      margin: auto;
+    }
+  
+  .campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+  }
+  
+  .campus-col img{
+    width: 100%;
+    display:block;
+  }
+  .layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  
+  }
+  .layer:hover{
+    background: rgba(201, 69, 66,0.7);
+    
+  }
+  .layer h3{
+    font-weight: 600;
+    color: #fff;
+    font-size: 30px;
+      bottom: 0;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+  
+  
+  }
+  .Facilities{
+  
+    width: 80%;
+  
+  text-align: center;
+  margin: auto;
+  padding-top:100px ;
+  
+  }
+  .Facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  
+  }
+  .Facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .Facilities-col p{
+    padding: 0;
+  }
+  .Facilities-col h3{
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 14px;
+  }
+  
+  /* testimonials */
+  
+  .testimonials{
+  
+  
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .testimonials-col{
+    flex-basis: 44%;
+    text-align: left;
+    margin-bottom:5% ;
+    padding: 25px;
+    display: flex;
+    cursor: pointer;
+    background: #fff3f3;
+    border-radius: 10px;
+  
+  }
+  .testimonials-col img{
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 30px;
+  }
+  
+  .testimonials-col p{
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .testimonials-col h3{
+   text-align: left;
+   font-size: 20px;
+  }
+  .testimonials-col .fas{
+    color: #de6d6d;
+  
+  }
+  
+  
+  
+  
+  /* cta */
+  
+  
+  
+  .cta{
+    width: 80%;
+    margin:  100px auto;
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.ibb.co/gtdSd8y/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    border-radius: 10px;
+  }
+  .cta h1{
+    margin-bottom: 40px;
+    color: #fff;
+    padding: 0;
+  }
+  /* footer */
+  
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer h4{
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  .icons .fab{
+    color: #ed05bb;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+  .far{
+    color: #ff2a00;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://i.ibb.co/zmWN063/banner.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 200px;
+  }
+  .nav-link{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-link ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+  }
+  .nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  .nav-link ul li:hover::after{
+    width: 100%;
+  
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .text-box h1{
+    font-size: 50px;
+  
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+  
+  }
+  .visit-btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    position:relative;
+    cursor: pointer;
+    padding: 10px;
+  
+  }
+  .visit-btn:hover{
+    background-color: black;
+    transition: 1s;
+  
+  }
+  nav .fas{
+    display: none;
+  }
+  
+  
+  
+  @media(max-width:700px){
+    .text-box h1{
+    font-size: 20px;}
+    .text-box p{
+    margin: 10px 0 40px;
+    font-size: 12px;}
+    .nav-link ul li{
+      display: block;
+  
+  
+    }
+    .row{
+      flex-direction: column;
+    }
+    .nav-link{
+      position: absolute;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      background:#f44336;
+      z-index: 2;
+      transition: 1s;
+    }
+  
+  
+      nav .fas{
+        display: inline-block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+  
+      }
+  
+      .nav-link ul{
+        padding: 20px;
+      }
+      
+  
+         .cta h1{
+          font-size: 24px;
+  
+         }
+    }
+  
+    /*course*/
+  
+  
+  
+  
+    .course{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+      font-size: 30px;
+    }
+  
+    h1{
+      font-size: 36px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+    }
+    .row{
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .cols{
+      flex-basis: 31%;
+      background: #fff3f3;
+      border-radius: 15px;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+    h3{
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+      font-size: 30px;
+    }
+    .cols:hover{
+      box-shadow: 10px 20px 20px #313632,
+                   -10px 10px 10px #313632;
+  
+    }
+  
+  
+    /* campus */
+  
+  
+  
+    .campus{
+      width: 80%;
+      text-align: center;
+      padding-top: 50px;
+      margin: auto;
+    }
+  
+  .campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+  }
+  
+  .campus-col img{
+    width: 100%;
+    display:block;
+  }
+  .layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  
+  }
+  .layer:hover{
+    background: rgba(201, 69, 66,0.7);
+    
+  }
+  .layer h3{
+    font-weight: 600;
+    color: #fff;
+    font-size: 30px;
+      bottom: 0;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+  
+  
+  }
+  .Facilities{
+  
+    width: 80%;
+  
+  text-align: center;
+  margin: auto;
+  padding-top:100px ;
+  
+  }
+  .Facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  
+  }
+  .Facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .Facilities-col p{
+    padding: 0;
+  }
+  .Facilities-col h3{
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 14px;
+  }
+  
+  /* testimonials */
+  
+  .testimonials{
+  
+  
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .testimonials-col{
+    flex-basis: 44%;
+    text-align: left;
+    margin-bottom:5% ;
+    padding: 25px;
+    display: flex;
+    cursor: pointer;
+    background: #fff3f3;
+    border-radius: 10px;
+  
+  }
+  .testimonials-col img{
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 30px;
+  }
+  
+  .testimonials-col p{
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .testimonials-col h3{
+   text-align: left;
+   font-size: 20px;
+  }
+  .testimonials-col .fas{
+    color: #de6d6d;
+  
+  }
+  
+  
+  
+  
+  /* cta */
+  
+  
+  
+  .cta{
+    width: 80%;
+    margin:  100px auto;
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.ibb.co/gtdSd8y/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    border-radius: 10px;
+  }
+  .cta h1{
+    margin-bottom: 40px;
+    color: #fff;
+    padding: 0;
+  }
+  /* footer */
+  
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer h4{
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  .icons .fab{
+    color: #ed05bb;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+  .far{
+    color: #ff2a00;
+  }
+  
+    
