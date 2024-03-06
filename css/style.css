@@ -210,18 +210,18 @@
     width: 100%;
     display:block;
   }
-  .layer{
-    background:transparent;
-    height: 100%;
-    width: 100%;
+  .layer::after{
     position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+    content: "";
+    width: 0%;
+    height: 0%;
+    transition: all 0.5s;
   
   }
-  .layer:hover{
+  .layer::after{
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
     background: rgba(201, 69, 66,0.7);
     
   }
@@ -231,13 +231,14 @@
     font-size: 30px;
       bottom: 0;
       position: absolute;
-      transform: translateX(-50%);
-      left: 50%;
+      /* transform: translateX(-50%); */
+      left: 0%;
       opacity: 0;
       transition: 0.5s;
   }
   .layer:hover h3{
-    bottom: 50%;
+    bottom: 0%;
+    right: 0;
     opacity: 1;
   
   
